@@ -14,5 +14,5 @@ rule dns_testing
       $s4 = "yahoo.com" ascii wide nocase
 
     condition:
-      (($a) and any of ($s*))
+      ($a) and any of ($s*)
 }
