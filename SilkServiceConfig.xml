@@ -7,7 +7,7 @@
 		<ProviderName>Microsoft-Windows-DotNETRuntime</ProviderName>
 		<UserKeywords>0x2038</UserKeywords>
 		<OutputType>eventlog</OutputType>
-		<YaraScan>C:\Program Files\SilkService\v8\SilkService\YaraRules\dotnet</YaraScan>
+		<YaraScan>C:\Program Files\SilkService\v8\SilkService\YaraRules\YaraRules-master\dotnet</YaraScan>
 		<YaraOptions>Matches</YaraOptions>
 	</ETWCollector>
 	<!-- Windows DNS -->
@@ -16,7 +16,7 @@
 		<CollectorType>user</CollectorType>
 		<ProviderName>Microsoft-Windows-DNS-Client</ProviderName>
 		<OutputType>eventlog</OutputType>
-		<YaraScan>C:\Program Files\SilkService\v8\SilkService\YaraRules\DNS</YaraScan>
+		<YaraScan>C:\Program Files\SilkService\v8\SilkService\YaraRules\YaraRules-master\DNS</YaraScan>
 		<YaraOptions>Matches</YaraOptions>
 	</ETWCollector>
 	<!-- Powershell -->
@@ -25,7 +25,7 @@
 		<CollectorType>user</CollectorType>
 		<ProviderName>Microsoft-Windows-Powershell</ProviderName>
 		<OutputType>eventlog</OutputType>
-		<YaraScan>C:\Program Files\SilkService\v8\SilkService\YaraRules\Powershell</YaraScan>
+		<YaraScan>C:\Program Files\SilkService\v8\SilkService\YaraRules\YaraRules-master\Powershell</YaraScan>
 		<YaraOptions>Matches</YaraOptions>
 	</ETWCollector>
 	<!-- LDAP -->
@@ -35,7 +35,7 @@
         <ProviderName>Microsoft-Windows-LDAP-Client</ProviderName>
         <UserKeywords>0x1</UserKeywords>
         <OutputType>eventlog</OutputType>
-		<YaraScan>C:\Program Files\SilkService\v8\SilkService\YaraRules\LDAP</YaraScan>
+		<YaraScan>C:\Program Files\SilkService\v8\SilkService\YaraRules\YaraRules-master\LDAP</YaraScan>
 		<YaraOptions>Matches</YaraOptions>
     </ETWCollector>
     <!-- WMI -->
@@ -44,7 +44,7 @@
         <CollectorType>user</CollectorType>
         <ProviderName>Microsoft-Windows-WMI-Activity</ProviderName>
         <OutputType>eventlog</OutputType>
-		<YaraScan>C:\Program Files\SilkService\v8\SilkService\YaraRules\WMI</YaraScan>
+		<YaraScan>C:\Program Files\SilkService\v8\SilkService\YaraRules\YaraRules-master\WMI</YaraScan>
 		<YaraOptions>Matches</YaraOptions>
     </ETWCollector>
     <!-- Example Kernel Collector -->

@@ -8,7 +8,7 @@
 
 write-host "[+] Processing SilkService Installation.."
 
-$Url = "https://github.com/fireeye/SilkService/releases/download/v0.8/SilkService_SilkService_v8.zip"
+$Url = "https://github.com/fireeye/SilkETW/releases/download/v0.8/SilkETW_SilkService_v8.zip"
 $sPath = "C:\Program Files\SilkService\"
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 
 (new-object System.Net.WebClient).DownloadFile("$Url",'C:\Windows\Temp\SilkService.zip')
@@ -44,7 +44,8 @@ $cPath = "C:\Program Files\SilkService\v8\SilkService\YaraRules\"
 # Unzip file
 expand-archive -path C:\Windows\Temp\YaraRules.zip -DestinationPath "$cPath"
 if (!(Test-Path "$cPath")) { Write-Error "$File was not decompressed successfully" -ErrorAction Stop }
-copy-item -Path "C:\Program Files\SilkService\v8\SilkService\YaraRules\YaraRules-master\SilkServiceConfig.xml" -Destination "C:\Program Files\SilkService\v8\SilkService\" -Force -EA SilentlyContinue# Installing Service
+copy-item -Path "C:\Program Files\SilkService\v8\SilkService\YaraRules\YaraRules-master\SilkServiceConfig.xml" -Destination "C:\Program Files\SilkService\v8\SilkService\" -Force -EA SilentlyContinue 
+# Installing Service
 
 write-host "[+] Creating the new SilkService service.."
 New-Service -name SilkService `
