@@ -7,5 +7,5 @@ rule Seatbelt_GetTokenInformation
         $s4 = "locals (int32,int64,int64,int64,int64,int32& pinned,bool,int32)" ascii wide nocase
 
     condition:
-        all of ($s*)}
+        all of ($s*)
 }
